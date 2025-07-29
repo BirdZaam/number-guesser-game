@@ -30,7 +30,14 @@ def check_guess(secret_number, player_guess):
     4. If the guess is too low, return the string "low".
     """
     # Student 2: Add your code here
-    pass
+    if player_guess == secret_number:
+        return "correct"
+    elif player_guess > secret_number:
+        return "high"
+    else:
+        return "low"
+import random
+    
 
 def play_game():
     """
@@ -40,7 +47,6 @@ def play_game():
     print("--- Welcome to the Number Guessing Game! ---")
     print("I'm thinking of a number between 1 and 100.")
 
-    
 
 if __name__ == "__main__":
     play_game()
